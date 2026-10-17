@@ -53,7 +53,7 @@ void computeDistribution(vector<string> data, vector<int>& counts)
 { 
   for (string value : data) {
     char firstdigit = value[0];
-    int index = firstdigit - 0;
+    size_t index = firstdigit - 0;
     counts[index]++;
   }
 
@@ -76,6 +76,8 @@ int main()
 {
   vector<string> data;
   vector<int>    counts;
+
+  counts.resize(256);
 
   cout << "starting" << endl;
   cout << endl;

@@ -75,9 +75,7 @@ void outputDistribution(vector<int> counts, int N)
 int main()
 {
   vector<string> data;
-  vector<int>    counts;
-
-  counts.resize(256);
+  vector<int>    counts(48);
 
   cout << "starting" << endl;
   cout << endl;
